@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "esnext",
+    "strict": true,
+    "target": "es2017"
+  },
+  "exclude": [
+    "node_modules",
+    "static"
+  ]
+}

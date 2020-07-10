@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chat</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" charset="UTF-8">
+    <meta name="referrer" content="no-referrer">
+     <style>
+        @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&Rubik:wght@300,400,500,700&Overpass:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+      </style>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&Rubik:wght@300,400,500,700&Overpass:wght@200;300;400;600;700&family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:wght@300;400;500;700&family=Roboto:wght@100;300;400;500;700&display=swap">    
+    <link href="../../../css/all.min.css" rel="stylesheet">
+    <link href="../../../vars/css" rel="stylesheet">
+    <style id="chat-styles" type="text/css"></style>
+    <script>
+!function(e,n,A){function o(e,n){return typeof e===n}function t(){var e,n,A,t,a,i,l;for(var f in r)if(r.hasOwnProperty(f)){if(e=[],n=r[f],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(A=0;A<n.options.aliases.length;A++)e.push(n.options.aliases[A].toLowerCase());for(t=o(n.fn,"function")?n.fn():n.fn,a=0;a<e.length;a++)i=e[a],l=i.split("."),1===l.length?Modernizr[l[0]]=t:(!Modernizr[l[0]]||Modernizr[l[0]]instanceof Boolean||(Modernizr[l[0]]=new Boolean(Modernizr[l[0]])),Modernizr[l[0]][l[1]]=t),s.push((t?"":"no-")+l.join("-"))}}function a(e){var n=u.className,A=Modernizr._config.classPrefix||"";if(c&&(n=n.baseVal),Modernizr._config.enableJSClass){var o=new RegExp("(^|\\s)"+A+"no-js(\\s|$)");n=n.replace(o,"$1"+A+"js$2")}Modernizr._config.enableClasses&&(n+=" "+A+e.join(" "+A),c?u.className.baseVal=n:u.className=n)}function i(e,n){if("object"==typeof e)for(var A in e)f(e,A)&&i(A,e[A]);else{e=e.toLowerCase();var o=e.split("."),t=Modernizr[o[0]];if(2==o.length&&(t=t[o[1]]),"undefined"!=typeof t)return Modernizr;n="function"==typeof n?n():n,1==o.length?Modernizr[o[0]]=n:(!Modernizr[o[0]]||Modernizr[o[0]]instanceof Boolean||(Modernizr[o[0]]=new Boolean(Modernizr[o[0]])),Modernizr[o[0]][o[1]]=n),a([(n&&0!=n?"":"no-")+o.join("-")]),Modernizr._trigger(e,n)}return Modernizr}var s=[],r=[],l={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var A=this;setTimeout(function(){n(A[e])},0)},addTest:function(e,n,A){r.push({name:e,fn:n,options:A})},addAsyncTest:function(e){r.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=l,Modernizr=new Modernizr;var f,u=n.documentElement,c="svg"===u.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;f=o(e,"undefined")||o(e.call,"undefined")?function(e,n){return n in e&&o(e.constructor.prototype[n],"undefined")}:function(n,A){return e.call(n,A)}}(),l._l={},l.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},l._trigger=function(e,n){if(this._l[e]){var A=this._l[e];setTimeout(function(){var e,o;for(e=0;e<A.length;e++)(o=A[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){l.addTest=i}),Modernizr.addAsyncTest(function(){function e(e,n,A){function o(n){var o=n&&"load"===n.type?1==t.width:!1,a="webp"===e;i(e,a&&o?new Boolean(o):o),A&&A(n)}var t=new Image;t.onerror=o,t.onload=o,t.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],A=n.shift();e(A.name,A.uri,function(A){if(A&&"load"===A.type)for(var o=0;o<n.length;o++)e(n[o].name,n[o].uri)})}),t(),a(s),delete l.addTest,delete l.addAsyncTest;for(var p=0;p<Modernizr._q.length;p++)Modernizr._q[p]();e.Modernizr=Modernizr}(window,document);
+    </script>
+</head>
+
+<body class="embed">
+
+    <div id="chat" class="chat chat-icons loading-cover pre-load">
+        <div class="loading-box loading">            
+            <div class="pulse-container">  
+              <div class="pulse-bubble pulse-bubble-1"></div>
+              <div class="pulse-bubble pulse-bubble-2"></div>
+              <div class="pulse-bubble pulse-bubble-3"></div>
+              <div class="catch-feedback">The chat appears to be stuck. Try clearing your browser's cache</div>
+            </div>
+          </div>
+            <div id="chat-panel-tools2" class="fasfab2_wrapper">
+                <div id="chat-panel-toolsi2" class="fasfab2_inner">        
+                    <a id="chat-whisper-btn" class="float-right fasfab2 fasfab2_end" title="Whispers"><i class="fas fa-comment-dots"></i></a>
+                    <a id="chat-settings-btn" class="float-right fasfab2" title="Settings"><i class="fas fa-wrench"></i></a>                        
+                </div>
+            </div>
+        <div id="chat-windows-select"></div>        
+        <div id="chat-vote-frame"></div>
+        <div id="chat-output-frame" class="animated flipInUp" data-scroll-notify></div>
+        <div id="chat-input-frame">
+            <div class="container">
+                <div class="row wrap-flexbox">
+                    <div class="col" style="display: inline;">
+                        <div id="chat-input-wrap" style="display: table-caption;">
+                            <div id="chat-input-scaler" style="width: 90vw;opacity:0;"></div>
+                                 <textarea id="chat-input-control" style="width: 90vw;" placeholder="Sign in to chat!" autocomplete="off" tabindex="1" autofocus spellcheck></textarea>
+                        </div>
+                    </div>
+                    <div class="col wrap-right">
+                        <div id="chat-slider-wrap" class="wl_mat wl_wave">
+                            <a id="chat-emoticon-btn" class="chat-tool-btn emotebtn toolbtns normal" title="Emotes">
+                                <i class="fas fa-laugh-beam"></i>
+                            </a>                   
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div id="chat-settings" class="chat-menu right">
+            <div class="list-wrap" style="padding-left: 10px;">
+                <div class="toolbar">
+                    <h5>
+                        <span>Settings</span>
+                        <i class="fa fa-chevron-circle-right menu-close"></i>
+                    </h5>
+                </div>
+                <div class="scrollable nano">
+                    <div class="content nano-content">
+                        <div id="chat-settings-form">
+
+                            <h4>Messages</h4>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="hideflairicons" name="hideflairicons" data-opposite/>
+                                <label class="form-check-label" for="hideflairicons">Show flairs</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="showtime" name="showtime">
+                                <label class="form-check-label" for="showtime">Show timestamps</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="ignorementions" name="ignorementions">
+                                <label class="form-check-label" for="ignorementions">Hide messages that mention Ignored Users</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="hidensfw" name="hidensfw">
+                                <label class="form-check-label" for="hidensfw">Hide messages with NSFW</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="allowRefresh" name="allowRefresh">
+                                <label class="form-check-label" for="allowRefresh">Allow Forced Stream/Chat Refreshes</label>
+                            </div>
+
+                            <h4>Whispers</h4>
+
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="showhispersinchat" name="showhispersinchat">
+                                <label class="form-check-label" for="showhispersinchat"> In-line messages</label>
+                            </div>
+
+                            <h4>Highlights, Focus &amp; Tags</h4>
+
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="highlight" name="highlight">
+                                <label class="form-check-label" for="highlight">Highlight when mentioned</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="focusmentioned" name="focusmentioned">
+                                <label class="form-check-label" for="focusmentioned">Include mentions when focused</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="taggedvisibility" name="taggedvisibility">
+                                <label class="form-check-label" for="taggedvisibility">Increased visibility of tagged users</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="boldtags" name="boldtags">
+                                <label class="form-check-label" for="boldtags">Bold Usernames in Chat Messages</label>
+                            </div>
+                            <div class="form-group row">
+                                <label title="Highlights usernames or text that match">Custom Highlights</label>
+                                <textarea name="customhighlight" style="resize: vertical;" class="form-control" placeholder="Comma separated ..."></textarea>
+                            </div>
+
+                            <h4>Autocomplete</h4>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="autocompletehelper" name="autocompletehelper">
+                                <label class="form-check-label" for="autocompletehelper">Enable Auto-Complete Guide</label>
+                            </div>
+                            <h4>Messages</h4>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="formatter-green" name="formatter-green">
+                                <label class="form-check-label" for="formatter-green">Show Greentext</label>
+                            </div>
+                            <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="formatter-emote" name="formatter-emote">
+                                <label class="form-check-label" for="formatter-emote">Show Emotes</label>
+                            </div>
+                            <!-- <div class="form-check">
+                                <input tabindex="1" autofocus type="checkbox" class="form-check-input" id="formatter-antilinkgore" name="formatter-antilinkgore">
+                                <label class="form-check-label" for="formatter-antilinkgore">Anti-Link Gore</label>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-user-list" class="chat-menu right">
+            <div class="list-wrap">
+                <div class="toolbar">
+                    <h5>
+                        <span>Users</span>
+                        <i class="fa fa-chevron-circle-right menu-close"></i>
+                    </h5>
+                </div>
+                <div class="scrollable nano">
+                    <div class="content nano-content"></div>
+                </div>
+                <div id="chat-user-list-search">
+                    <input type="text" class="form-control" value="" placeholder="Search..." />
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-emote-list" class="chat-menu left">
+            <div class="list-wrap">
+                <div class="toolbar">
+                    <h5>
+                        <span>Emotes</span>
+                        <i class="fa fa-chevron-circle-left menu-close"></i>
+                    </h5>
+                </div>
+                <div class="scrollable nano">
+                    <div class="content nano-content">
+                        <div class="emote-group" id="default-emotes"></div>
+                        <div style="font-weight:900">Sub Only Emotes</div>
+                        <div class="emote-group" id="sub-emotes"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-whisper-users" class="chat-menu left">
+            <div class="list-wrap">
+                <div class="toolbar">
+                    <h5>
+                        <span>Whispers</span>
+                        <i class="fa fa-chevron-circle-left menu-close"></i>
+                    </h5>
+                </div>
+                <div class="scrollable nano">
+                    <div class="content nano-content">
+                        <ul></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="chat-login-screen" style="display: none">
+            <h2>Register to chat!</h2>
+            <p>Sign in using social media
+                <br /></p>
+            <div>
+                <button id="chat-btn-login" class="btn btn-primary">Login</button>
+                <button id="chat-btn-cancel" class="btn btn-default">No thanks</button>
+            </div>
+        </div>
+
+        <div id="chat-loading">
+            <div>
+                <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                <span class="sr-only">Loading... If this persists try clearing your browser's cache (Shift+F5, Ctrl+F5, or manually)</span>
+            </div>
+        </div>
+
+    </div>
+    
+    
+</body>
+
+</html>
